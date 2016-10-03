@@ -1,6 +1,101 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a class="active" href="#home">Scores</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Stats</a>
+    <div class="dropdown-content">
+      <a href="#">Most Points</a>
+      <a href="#">Most Goals</a>
+      <a href="#">Most Assists</a>
+	  <a href="#">Best Save %</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Standings</a>
+    <div class="dropdown-content">
+      <a href="#">Metropolitan</a>
+      <a href="#">Atlantic</a>
+      <a href="#">Central</a>
+	  <a href="#">Pacific</a>
+    </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Fantasy</a>
+    <div class="dropdown-content">
+      <a href="#">Rookie Steals</a>
+      <a href="#">Overated Players</a>
+      <a href="#">Goalies</a>
+    </div>
+	<li class="dropdown">
+    <a href="#" class="dropbtn">Watch</a>
+    <div class="dropdown-content">
+      <a href="#">Goals of the Week</a>
+      <a href="#">Scores</a>
+    </div>
+  </li>
+  <li><a class="active" href="#home">Teams</a></li>
+  
+</ul>
+</body>
+
+<head>
 <title>NHL Player Stats</title>
 <link rel="stylesheet" href="main.css">
 <link rel="icon" 
@@ -177,9 +272,62 @@ tr:nth-child(even) {
 </table>
 
 <br>
+<b>2015-2016 NHL Best Goalie Save Percentage:<b><br>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<table>
+  <tr>
+    <th>Player:</th>
+    <th>Team:</th>
+    <th>Save Percentage:</th>
+  </tr>
+  <tr>
+    <td>Brian Elliot</td>
+    <td>St. Louis Blues</td>
+    <td>.930</td>
+  </tr>
+  <tr>
+    <td>Ben Bishop</td>
+    <td>Tampa Bay Lightning</td>
+    <td>.926</td>
+  </tr>
+  <tr>
+    <td>Thomas Greiss</td>
+    <td>New York Islanders</td>
+    <td>.925</td>
+  </tr>
+  <tr>
+    <td>Michael Neuvirth</td>
+    <td>Philadelphia Flyers</td>
+    <td>.924</td>
+  </tr>
+  <tr>
+    <td>Corey Crawford</td>
+    <td>Chicago Blackhawks</td>
+    <td>.924</td>
+  </tr>
+</table>
 
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/899px-05_NHL_Shield.svg.png" alt="NHLlogo.png" style="width:100px;height:100px;">
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/899px-05_NHL_Shield.svg.png" alt="NHLlogo.png" style="width:100px;height:100px;">
+
 
 </body>
 </html>
