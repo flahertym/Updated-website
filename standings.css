@@ -1,31 +1,3 @@
-body {
-		background: url(https://s3.amazonaws.com/hc_storage/files/photo_uploads/61920-backgroundhockey.jpg_cover.jpg?1461940091) no-repeat fixed center; 
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		}
-		
-table {
-	
-	/*width: 100px;*/
-	height: 500 px;
-	font-family: arial, sans-serif;
-    border-collapse: collapse;
-}
-
-table, td, th {
-    border: 3px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-	font-family: arial, sans-serif;
-    border-collapse: collapse;
-    /*width: 100%;*/
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
 ul {
     list-style-type: none;
     margin: 0;
@@ -78,3 +50,31 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 	}
+
+
+table {
+    width:100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+table#t01 th {
+    background-color: black;
+    color: white;
+}
