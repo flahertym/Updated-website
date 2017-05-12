@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NHL Home</title>
+		<link rel="stylesheet" href="Style/main.css">
+		<link rel="icon" 
+			type="image/png" 
+			href="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/527px-05_NHL_Shield.svg.png">
+<center>
+	<title> NHL Stats Login</title>
+		<link rel="stylesheet" href="css/style.css"/>
+			<script src="js/login.js"></script>
+</head>
+<body>
+	<div class="container">
+	<div class="main">
+	<! -- Here is the title of the login, and the boxes for the login username and password -- >
+		<h2>NHL Stats Login</h2>
+		<form id="form_id" method="post" name="myform">
+			<label>User Name :</label>
+			<input type="text" name="username" id="username"/>
+			<label>Password :</label>
+			<input type="password" name="password" id="password"/>
+			<input type="button" value="Login" id="submit" onclick="validate()"/>
+		</form>
+</div>
+</div>
+
+	<script>
+
+	
+
+	function validate() {
+    var un = document.getElementById("username").value;
+    var pw = document.getElementById("password").value;
+    var valid = -1;
+
+    var unArray = ["Matt", "Dom", "Fermini"];//Here are the usernames
+    var pwArray = ["matt123", "dom123", "fermini123"];//Here are the passwords
+	//This makes sure the username matches the password
+    for (var i=0; i <unArray.length; i++) {
+        if ((un == unArray[i]) && (pw == pwArray[i])) {
+            valid = i;
+            break;
+        }
+    }
+
+    if (valid != -1) {
+        alert ("Login was successful");//Alert saying the code was succesful
+		window.location = "Home2.html";
+    }
+    else {//If password is wrong, an alert comes up saying to try again.
+        alert("Invalid Username and/or Password! Please try again. You will not be able to submit this form without a successful login")
+        document.getElementById("pword").value = "";
+        document.getElementById("usern").value = "";
+        document.getElementById("usern").focus();
+    }
+}
+
+	</script>
+	
+	
+</body>
+</html>

@@ -1,0 +1,82 @@
+body {
+		background: url(https://s3.amazonaws.com/hc_storage/files/photo_uploads/61920-backgroundhockey.jpg_cover.jpg?1461940091) no-repeat fixed center; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		}
+		
+table {
+	
+	/*width: 100px;*/
+	height: 500 px;
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+	font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /*width: 100%;*/
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a:hover {background-color: #0000FF}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+td, th {
+    border: 3px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+	width: 275px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+	}
+
+	
